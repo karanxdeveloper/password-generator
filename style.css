@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.main{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(137, 79, 195);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.main > h1{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 3rem;
+    color: rgba(255, 255, 255, 0.671);;
+}
+
+.password-container{
+    background-color: rgba(255, 255, 255, 0.671);;
+    width: 30vw;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    position: relative;
+    padding: 0px 5px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.25s ease-out;
+}
+
+#password-box{
+    outline: none;
+    width: 85%;
+    height: 70%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    border-color: rgba(255, 255, 255, 0.671);
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
+  font-size: 20px;
+  border-bottom-color: rgba(197, 197, 197, 0.413);
+  background-color: white;
+  color: black;
+}
+
+.customize-container{
+    background-color: rgba(255, 255, 255, 0.671);
+    width: 30vw;
+    height: 25vh;
+    padding: 0px 5px;
+   transition: all 0.25s ease-out;
+}
+
+.customize-container > h2{
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.password-edit{
+    display: flex;
+    align-items: center;
+   justify-content: space-around;
+    height: 20vh;
+}
+
+
+
+#number-range{
+   width: 59px;
+   height: 25px;
+}
+
+
+.password-charc{
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+
+#generate-btn{
+padding: 10px 15px;
+border-radius: 16px;
+outline: none;
+border: none;
+font-family: 'Courier New', Courier, monospace;
+background-color: rgba(0, 47, 255, 0.607);
+font-weight: bold;
+font-size: 20px;
+color: black;
+}
+
+@media only screen and (max-width: 1200px)  {
+    .password-container{
+        width: 50vw;
+    }
+
+    .customize-container{
+        width: 50vw;
+    }
+}
+
+@media only screen and (max-width: 768px)  {
+    .password-container{
+        width: 60vw;
+    }
+
+    .customize-container{
+        width: 60vw;
+    }
+}
+@media only screen and (max-width: 570px)  {
+    .password-container{
+        width: 75vw;
+    }
+
+    .customize-container{
+        width: 75vw;
+    }
+}
+@media only screen and (max-width: 490px)  {
+
+    .main > h1{
+        font-size: 2.5rem;
+    }
+
+    .password-container{
+        width: 85vw;
+    }
+
+    .customize-container{
+        width: 85vw;
+    }
+}
+@media only screen and (max-width: 420px)  {
+
+    .main > h1{
+        font-size: 1.9rem;
+    }
+
+    .password-container{
+        width: 90vw;
+    }
+
+    .customize-container{
+        width: 90vw;
+        height: 30vh;
+    }
+}
